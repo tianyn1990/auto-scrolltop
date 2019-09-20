@@ -1,0 +1,19 @@
+{
+  "name": "auto-scrolltop",
+  "version": "0.0.1",
+  "description": "Scroll top when page onload/onpageshow trigger and will consider if onmousemove triggered.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tianyn1990/auto-scrolltop.git"
+  },
+  "author": "tianyn1990",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tianyn1990/auto-scrolltop/issues"
+  },
+  "homepage": "https://github.com/tianyn1990/auto-scrolltop#readme"
+}
