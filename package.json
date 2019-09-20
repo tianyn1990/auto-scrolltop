@@ -2,10 +2,19 @@
   "name": "auto-scrolltop",
   "version": "0.0.1",
   "description": "Scroll top when page onload/onpageshow trigger and will consider if onmousemove triggered.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup --config rollup.config.js",
+    "prepublishOnly": "npm run build"
   },
+  "files": [
+    "dist",
+    "src",
+    "package.json",
+    "LICENSE",
+    "README.md"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tianyn1990/auto-scrolltop.git"
@@ -15,5 +24,20 @@
   "bugs": {
     "url": "https://github.com/tianyn1990/auto-scrolltop/issues"
   },
-  "homepage": "https://github.com/tianyn1990/auto-scrolltop#readme"
+  "homepage": "https://github.com/tianyn1990/auto-scrolltop#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/plugin-transform-runtime": "^7.5.0",
+    "@babel/polyfill": "^7.2.5",
+    "@babel/preset-env": "^7.5.4",
+    "@babel/runtime": "^7.3.4",
+    "rollup": "^1.21.4",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  },
+  "peerDependencies": {
+    "core-js": "^2.0.0",
+    "@babel/runtime": "^7.0.0"
+  }
 }
