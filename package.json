@@ -1,6 +1,6 @@
 {
   "name": "auto-scrolltop",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Scroll top when page onload/onpageshow trigger and will consider if onmousemove triggered.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
